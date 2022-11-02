@@ -1,0 +1,415 @@
+Serial communications initialized
+Running HAL9000 Debug version 1.8 built on Wed Nov 13 07:14:16 2019
+[system.c][113]OsInfoInit succeeded
+[system.c][122]CpuMuActivateFpuFeatures succeeded
+[system.c][134]InitIdtHandlers succeeded
+[mmu.c][320]ExEventInit succeeded
+[mmu.c][1484]PeRetrieveNtHeader succeeded
+[mmu.c][331]_MmuRetrieveKernelInfoAndValidate succeeded
+[mmu.c][340]Will change to a temporary stack at 0xFFFF800001106000
+Physical memory size: 0xFFF75800
+Highest Physical address present: 0x140000000
+Highest Physical address available: 0x140000000
+Bitmap size: 163840 B
+All memory is now reserved
+Releasing 785888 frames of memory starting from PA 0x100000
+Releasing 256 frames of memory starting from PA 0xBFF00000
+Releasing 262144 frames of memory starting from PA 0x100000000
+_PmmInitializeAllocationBitmap completed successfully
+PmmInitSystem suceeded and needs 163840 bytes
+IA32_PAT: 0x7040600070406
+WbIndex: 0
+UcIndex: 3
+Frames reserved for paging structures 0xC00
+_MmuInitPagingSystem succeeded
+VmmInit suceeded
+Kernel mapped succeesfully
+_MmuMapKernelMemory suceeded
+[mmu.c][431]_MmuRemapStack succeeded
+Will change to new paging structures
+Changed to new cr3
+Frames for heap structures: 0x2A00
+Total size reserved for heap: 44040192 bytes ( 43008 KB )
+ClHeapInit suceeded
+_MmuInitializeHeap succeeded for normal heap
+Frames for heap structures: 0xC00
+Total size reserved for heap: 12582912 bytes ( 12288 KB )
+ClHeapInit suceeded
+_MmuInitializeHeap succeeded for special heap
+[system.c][147]MmuInitSystem succeeded
+[WARNING][boot_module.c][250]There's nothing we can do with a module with size 0!
+[WARNING][boot_module.c][108]_MapSingleModule failed with status 0xE8000031
+[system.c][166]IomuInitSystemDriver suceeded
+Successfully initialized ACPI tables
+
+IO APIC
+IOAPIC at phys address: 0xFEC00000
+IRQ base: 0x0
+ID: 0x4
+
+Interrupt override
+Bus: 0x0
+SourceIrq: 0x0
+GlobalIrq: 0x2
+IntiFlags: 0x5
+
+Local NMI
+Processor id: 0x0
+IntiFlags id: 0x5
+Lint id: 0x1
+
+Local NMI
+Processor id: 0x1
+IntiFlags id: 0x5
+Lint id: 0x1
+
+Local NMI
+Processor id: 0x2
+IntiFlags id: 0x5
+Lint id: 0x1
+
+Local NMI
+Processor id: 0x3
+IntiFlags id: 0x5
+Lint id: 0x1
+[acpi_interface.c][137]Successfully parsed MADT
+MCFG entry:
+Base address: 0xF0000000
+Segment: 0x0
+Bus: 0 -> 127
+[acpi_interface.c][153]Successfully parsed MCFG
+[system.c][175]AcpiInterfaceInit suceeded
+[lapic_system.c][78]_LapicInstallInterruptRoutines succeeeded
+[lapic_system.c][88]_LapicSystemMapRegister succeeded
+[lapic_system.c][91]CPU frequency: 0x3F9F800
+[lapic_system.c][94]Divided bus frequency: 0xFE7E0
+[system.c][183]LapicSystemInit suceeded
+[smp.c][203]SMP interrupt routines successfully registered!
+[smp.c][211]Reached end of CPU list
+[smp.c][231]The system has 4 CPUs
+[system.c][192]SmpInit succeded
+APIC ID: 0x00, logical ID: 0x01
+[cpumu.c][351][CPU:00]Will change to stack: 0xFFFF850143656000
+[cpumu.c][57]CR4 is 0x100020
+EFER is 0xD01
+[lapic_system.c][128]Apic is SW enabled
+[lapic_system.c][131][CPU:00]LAPIC registers configured
+[lapic_system.c][133][CPU:00]Will configure timer using interrupt vector 0xD0
+[lapic_system.c][135][CPU:00]LAPIC timer configured
+[thread.c][178][CPU:00]_ThreadInit succeeded
+[smp.c][607][CPU:00]Number of active CPUs: 1/4
+[system.c][209]CpuMuAllocAndInitCpu succeeded
+[pci_system.c][658]Will map 134217728 bytes at PA 0xF0000000
+[pci_system.c][132]Reached end of MCFG list
+[iomu.c][267]PciSystemInit suceeded
+[iomu.c][271]Legacy PIC inititialized
+[ioapic_system.c][509]Reached end of IO Apic list
+[ioapic_system.c][171]IO APICs retrieved successfully
+[ioapic_system.c][591]Reached end of Interrupt override list
+[ioapic_system.c][591]Reached end of Interrupt override list
+[ioapic_system.c][179]IO APIC interrupt overrides retrieved successfully
+[iomu.c][279]IoApicSystemInit suceeded
+[iomu.c][292]InitIdtHandlers succeeded
+[pci_system.c][175]PCI Express support is  available
+Retrieved 42 PCI Express devices
+[iomu.c][468]PciDevRetrieveDevices succeeded
+[iomu.c][471]PciSystemEstablishHierarchy finished
+[iomu.c][302]_IomuRetrievePciDevicesAndEstablishHierarchy succeeded
+[iomu.c][391]RtcInit finished
+Irq 0x8 is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[WARNING][ioapic_system.c][376]Interrupt 0x8 is not registered in IO Apic 0x4
+Irq 0x8 is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[iomu.c][406]RTC Isr successfully installed!
+[iomu.c][311]_IomuSetupRtc succeeded
+[iomu.c][313]TSC frequency: 0xA8BC22F0
+[iomu.c][429]Initial PIT timer count is 0xBA6F
+Irq 0x2 is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[WARNING][ioapic_system.c][376]Interrupt 0x2 is not registered in IO Apic 0x4
+Irq 0x2 is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[iomu.c][445]PIT Isr successfully installed!
+[iomu.c][322]_IomuSetupPit succeeded
+Will update LEDs with data: 0x0
+Irq 0x1 is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[WARNING][ioapic_system.c][376]Interrupt 0x1 is not registered in IO Apic 0x4
+Irq 0x1 is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[iomu.c][332]KeyboardInitialize succeeded
+[system.c][220]IomuInitSystem succeeded
+[system.c][229]CoreInit succeeded
+APIC ID: 0x01, logical ID: 0x02
+APIC ID: 0x02, logical ID: 0x04
+APIC ID: 0x03, logical ID: 0x08
+[smp.c][266]Reached end of CPU list
+[ap_tramp.c][156]CR3: 0x112E000
+[ap_tramp.c][157]Low GDT base: 0x21C4
+[ap_tramp.c][158]Low GDT limit: 0x7F
+[ap_tramp.c][159]High GDT base: 0xFFFF8000010FA3E0
+[ap_tramp.c][160]High GDT limit: 0xFFF
+[ap_tramp.c][194]Cpu at: 0xFFFF850140002650
+[ap_tramp.c][195]Setup AP config for apic id 0x1
+[ap_tramp.c][196]Physical Stack PA: 0x4000
+[ap_tramp.c][197]Virtual Stack VA: 0xFFFF85014B683FA0
+[ap_tramp.c][194]Cpu at: 0xFFFF850140002FF0
+[ap_tramp.c][195]Setup AP config for apic id 0x2
+[ap_tramp.c][196]Physical Stack PA: 0x5000
+[ap_tramp.c][197]Virtual Stack VA: 0xFFFF85014B6B0FA0
+[ap_tramp.c][194]Cpu at: 0xFFFF850140003990
+[ap_tramp.c][195]Setup AP config for apic id 0x3
+[ap_tramp.c][196]Physical Stack PA: 0x6000
+[ap_tramp.c][197]Virtual Stack VA: 0xFFFF85014B6DDFA0
+[system.c][238]SmpSetupLowerMemory succeded
+[mmu.c][1024]Successfully activated process identifiers!
+[system.c][247]Successfully intiialized system process!
+[thread.c][225][CPU:00]EvtInitialize succeeded
+[thread.c][241][CPU:00]ThreadCreate for IDLE thread succeeded
+[thread.c][246][CPU:00]About to enable interrupts
+[thread.c][251][CPU:00]Interrupts enabled :)
+[system.c][256]ThreadSystemInitIdleForCurrentCPU succeeded
+Successfully initialized ACPI subsystem
+Successfully loaded ACPI tables
+Successfully enabled ACPI subsystem
+Successfully initialized ACPI objects
+Number of PRT entries is 72
+[acpi_interface.c][238]Successfully parsed PRTs
+[system.c][264]AcpiInterfaceLateInit succeeded
+[smp.c][340]Will signal APs
+[ap_tramp.c][258][CPU:02]Hello C!, CPU at: 0xFFFF850140002FF0
+[ap_tramp.c][258][CPU:01]Hello C!, CPU at: 0xFFFF850140002650
+[ap_tramp.c][258][CPU:03]Hello C!, CPU at: 0xFFFF850140003990
+[cpumu.c][57]CR4 is 0x100020
+[cpumu.c][57]CR4 is 0x100020
+[smp.c][342]APs were signaled
+[cpumu.c][57]CR4 is 0x100020
+EFER is 0xD01
+EFER is 0xD01
+EFER is 0xD01
+[lapic_system.c][128]Apic is SW enabled
+[lapic_system.c][128]Apic is SW enabled
+[lapic_system.c][128]Apic is SW enabled
+[lapic_system.c][131][CPU:03]LAPIC registers configured
+[lapic_system.c][131][CPU:01]LAPIC registers configured
+[lapic_system.c][131][CPU:02]LAPIC registers configured
+[lapic_system.c][133][CPU:01]Will configure timer using interrupt vector 0xD0
+[lapic_system.c][133][CPU:03]Will configure timer using interrupt vector 0xD0
+[lapic_system.c][133][CPU:02]Will configure timer using interrupt vector 0xD0
+[lapic_system.c][135][CPU:01]LAPIC timer configured
+[lapic_system.c][135][CPU:03]LAPIC timer configured
+[lapic_system.c][135][CPU:02]LAPIC timer configured
+[thread.c][178][CPU:03]_ThreadInit succeeded
+[thread.c][178][CPU:02]_ThreadInit succeeded
+[smp.c][607][CPU:03]Number of active CPUs: 2/4
+[thread.c][178][CPU:01]_ThreadInit succeeded
+[smp.c][607][CPU:02]Number of active CPUs: 3/4
+[smp.c][607][CPU:01]Number of active CPUs: 4/4
+[mmu.c][1024]Successfully activated process identifiers!
+[mmu.c][1024]Successfully activated process identifiers!
+[thread.c][225][CPU:03]EvtInitialize succeeded
+[smp.c][611][CPU:01]All CPUs woke up, will signal BSP
+[thread.c][241][CPU:03]ThreadCreate for IDLE thread succeeded
+[thread.c][225][CPU:02]EvtInitialize succeeded
+[thread.c][246][CPU:03]About to enable interrupts
+[mmu.c][1024]Successfully activated process identifiers!
+[thread.c][241][CPU:02]ThreadCreate for IDLE thread succeeded
+[thread.c][251][CPU:03]Interrupts enabled :)
+[thread.c][246][CPU:02]About to enable interrupts
+[thread.c][225][CPU:01]EvtInitialize succeeded
+[thread.c][251][CPU:02]Interrupts enabled :)
+[thread.c][241][CPU:01]ThreadCreate for IDLE thread succeeded
+[smp.c][346]Aps have waken UP
+[thread.c][246][CPU:01]About to enable interrupts
+[system.c][267]SmpWakeupAps completed
+[thread.c][251][CPU:01]Interrupts enabled :)
+[iomu.c][349]CPU interrupt time 10000/40000 us
+[ioapic_system.c][682]Reached end of PRT list
+[ioapic_system.c][682]Reached end of PRT list
+[ioapic_system.c][202]PRT entries retrieved successfully
+[iomu.c][357]IoApicLateSystemInit succeeded
+[system.c][276]IomuInitSystemAfterApWakeup succeeded
+[system.c][281]SmpCleanupLowerMemory completed
+[system.c][286]MmuDiscardIdentityMappings completed
+[system.c][295]MmuInitThreadingSystem succeded
+[ata.c][48]Found 1 IDE devices
+Irq 0xE is handled by IO APIC 0x4 which handles [0x0, 0x17]
+[WARNING][ioapic_system.c][376]Interrupt 0xE is not registered in IO Apic 0x4
+Irq 0xE is handled by IO APIC 0x4 which handles [0x0, 0x17]
+AtaInitialize succeded
+Device does not exist
+[WARNING][ata.c][82]AtaInitialize failed with status: 0xE0010001
+Not ATA, maybe ATAPI
+[WARNING][ata.c][82]AtaInitialize failed with status: 0xE0010003
+Not ATA, maybe ATAPI
+[WARNING][ata.c][82]AtaInitialize failed with status: 0xE0010003
+Succesfully called device with IOCTL IOCTL_DISK_GET_LENGTH_INFO
+[disk.c][220]Disk read with sector index 0x0, sector count 0x1
+Allocate structure for 4 partitions
+Will now call _DiskRetrievePartitionsFromDiskStartingAtOffset to complete pDiskInformation structure
+[disk.c][220]Disk read with sector index 0x0, sector count 0x1
+[disk.c][169]_DiskRetrievePartitionsFromDisk succceded
+Found 1 disks
+[volume.c][73]pDiskLayout has address: 0xFFFF8501403EF9E0
+[0][0] Volume successfully initialized
+[0][1] Volume successfully initialized
+[0][2] Volume successfully initialized
+[0][3] Volume successfully initialized
+[volume.c][135]Calling HeapFreePoolWithTag for pDiskLayout: 0xFFFF8501403EF9E0
+[WARNING][fat32.c][115]Partition type 0x82 not supported
+[WARNING][fat32.c][115]Partition type 0x0 not supported
+[WARNING][fat32.c][115]Partition type 0x0 not supported
+[WARNING][swapfs.c][106]Partition type 0xB not supported
+[WARNING][swapfs.c][106]Partition type 0x0 not supported
+[WARNING][swapfs.c][106]Partition type 0x0 not supported
+[ERROR][io_devices.c][548]Function PciDevFindDevicesByClassAndSubclass failed with status 0xE8000004
+[ERROR][network_port.c][132]Function IoGetPciDevicesMatchingSpecification failed with status 0xE8000004
+[ERROR][eth_82574L.c][98]Function NetworkPortRegisterMiniportDriver failed with status 0xE0010001
+[ERROR][io_devices.c][210]Function DriverEntry failed with status 0xE0010001
+[WARNING][iomu.c][1171]Secondary driver eth82574L.sys could not be loaded
+
+Driver at 0xFFFF85013FFFF0B0
+Name: system.sys
+Dispatch functions:
+DispatchFunction[0] = 0x0
+DispatchFunction[1] = 0x0
+DispatchFunction[2] = 0x0
+DispatchFunction[3] = 0x0
+DispatchFunction[4] = 0x0
+DispatchFunction[5] = 0x0
+DispatchFunction[6] = 0x0
+Device number: 1
+Device list:
+Device at 0xFFFF85013FFFF180
+Device type: System
+Stack size: 1
+Device extension size: 0x0
+Attached to device: 0x0
+
+
+Driver at 0xFFFF8501403EF240
+Name: ata.sys
+Dispatch functions:
+DispatchFunction[0] = 0x0
+DispatchFunction[1] = 0x0
+DispatchFunction[2] = 0xFFFF80000109E170
+DispatchFunction[3] = 0xFFFF80000109E170
+DispatchFunction[4] = 0x0
+DispatchFunction[5] = 0x0
+DispatchFunction[6] = 0xFFFF80000109E9C0
+Device number: 1
+Device list:
+Device at 0xFFFF8501403EF340
+Device type: Harddisk Controller
+Stack size: 1
+Device extension size: 0x80
+Attached to device: 0x0
+
+
+Driver at 0xFFFF8501403EF510
+Name: disk.sys
+Dispatch functions:
+DispatchFunction[0] = 0x0
+DispatchFunction[1] = 0x0
+DispatchFunction[2] = 0xFFFF80000109C760
+DispatchFunction[3] = 0xFFFF80000109C760
+DispatchFunction[4] = 0x0
+DispatchFunction[5] = 0x0
+DispatchFunction[6] = 0xFFFF80000109CAA0
+Device number: 1
+Device list:
+Device at 0xFFFF8501403EF690
+Device type: Disk
+Stack size: 2
+Device extension size: 0x18
+Attached to device: 0xFFFF8501403EF340
+
+
+Driver at 0xFFFF8501403EF830
+Name: vol.sys
+Dispatch functions:
+DispatchFunction[0] = 0x0
+DispatchFunction[1] = 0x0
+DispatchFunction[2] = 0xFFFF80000109D5F0
+DispatchFunction[3] = 0xFFFF80000109D5F0
+DispatchFunction[4] = 0x0
+DispatchFunction[5] = 0x0
+DispatchFunction[6] = 0xFFFF80000109DA00
+Device number: 4
+Device list:
+Device at 0xFFFF8501403EFB20
+Device type: Volume
+Stack size: 3
+Device extension size: 0x20
+Attached to device: 0xFFFF8501403EF690
+
+Device at 0xFFFF8501403EFC90
+Device type: Volume
+Stack size: 3
+Device extension size: 0x20
+Attached to device: 0xFFFF8501403EF690
+
+Device at 0xFFFF8501403EFE00
+Device type: Volume
+Stack size: 3
+Device extension size: 0x20
+Attached to device: 0xFFFF8501403EF690
+
+Device at 0xFFFF8501403EFF70
+Device type: Volume
+Stack size: 3
+Device extension size: 0x20
+Attached to device: 0xFFFF8501403EF690
+
+
+Driver at 0xFFFF8501403F00E0
+Name: fat.sys
+Dispatch functions:
+DispatchFunction[0] = 0xFFFF800001083DE0
+DispatchFunction[1] = 0xFFFF800001084470
+DispatchFunction[2] = 0xFFFF800001084770
+DispatchFunction[3] = 0xFFFF800001084770
+DispatchFunction[4] = 0xFFFF800001084D30
+DispatchFunction[5] = 0xFFFF8000010850C0
+DispatchFunction[6] = 0x0
+Device number: 1
+Device list:
+Device at 0xFFFF8501403F02E0
+Device type: File System
+Stack size: 4
+Device extension size: 0x30
+Attached to device: 0xFFFF8501403EFB20
+
+
+Driver at 0xFFFF8501403F0410
+Name: swapfs.sys
+Dispatch functions:
+DispatchFunction[0] = 0xFFFF80000108EB00
+DispatchFunction[1] = 0xFFFF80000108EE30
+DispatchFunction[2] = 0xFFFF80000108F030
+DispatchFunction[3] = 0xFFFF80000108F3E0
+DispatchFunction[4] = 0x0
+DispatchFunction[5] = 0x0
+DispatchFunction[6] = 0x0
+Device number: 1
+Device list:
+Device at 0xFFFF8501403F0610
+Device type: File System
+Stack size: 4
+Device extension size: 0x10
+Attached to device: 0xFFFF8501403EFC90
+
+[iomu.c][519]Drivers successfully initialized!
+Found system partition at [C:\]
+[iomu.c][528]Successfully determined system partition!
+[iomu.c][538]Successfully determined swap partition!
+[system.c][305]IOMU late initialization successfully completed
+Will change networking state 1 -> 0
+[system.c][314]Network stack successfully initialized
+[Entry64.c][63]InitSystem executed successfully
+[WARNING][cmd_interpreter.c][312]BootModuleGet failed with status 0xE8000004 for Tests module
+[core.c][153]System is IDLE!
+[core.c][168]System is no longer IDLE after 90.220 sec!
+   TID|               Name|Prio|  State|Cmp ticks|Prt ticks|Ttl ticks|  Process|
+     0|            main-00|  16|  Ready|      211|       20|      231|        1|
+     4|            idle-00|  16|Blocked|     2711|     2832|     5543|        1|
+    14|            idle-03|  16|Blocked|     2367|     2363|     4730|        1|
+    18|            idle-02|  16|Blocked|     2784|     2779|     5563|        1|
+    1C|            idle-01|  16|Blocked|     2788|     2782|     5570|        1|
+    20| Page Zeroer Thread|   0|Blocked|        0|        3|        3|        1|
+[core.c][153]System is IDLE!

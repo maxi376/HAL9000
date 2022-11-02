@@ -1,0 +1,32 @@
+﻿  fat32.c
+  fat_utils.c
+  fat_operations.c
+  FAT32.vcxproj -> D:\Max\PSO\lab0\hal9000\bin\x64\Debug\FAT32\FAT32.lib
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(239): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(529): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(562): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(588): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(609): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(675): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(696): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_utils.c(710): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(613): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(669): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(934): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(957): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(1101): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(1112): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(1119): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(1195): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(1342): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\FAT32\src\fat_operations.c(1364): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+  "Project name: [FAT32]"
+  "Project dir: [D:\Max\PSO\lab0\hal9000\src\]"
+  "Platform name: [x64]"
+  "Configuration name: [Debug]"
+  "Solution name: [HAL9000]"
+  "Target name: [FAT32]"
+  "Target extension: [.lib]"
+  "Full project path: [D:\Max\PSO\lab0\hal9000\src\..\bin\x64\Debug\FAT32]"
+  About to save scripts
+  --INFO: build done!

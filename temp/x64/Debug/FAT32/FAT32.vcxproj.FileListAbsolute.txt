@@ -1,0 +1,2 @@
+D:\Max\PSO\lab0\hal9000\bin\x64\Debug\FAT32\FAT32.lib.lastcodeanalysissucceeded
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\FAT32\NativeCodeAnalysis.read.1.tlog

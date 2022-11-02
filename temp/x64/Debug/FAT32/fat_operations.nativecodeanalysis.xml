@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>613</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatSearchDirectoryEntry</FUNCTION>
+    <DECORATED>FatSearchDirectoryEntry</DECORATED>
+    <FUNCLINE>576</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>669</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatSearchDirectoryEntry</FUNCTION>
+    <DECORATED>FatSearchDirectoryEntry</DECORATED>
+    <FUNCLINE>576</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>934</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatCreateDirectoryEntry</FUNCTION>
+    <DECORATED>FatCreateDirectoryEntry</DECORATED>
+    <FUNCLINE>812</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>957</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatCreateDirectoryEntry</FUNCTION>
+    <DECORATED>FatCreateDirectoryEntry</DECORATED>
+    <FUNCLINE>812</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>1101</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatCreateDirectoryEntry</FUNCTION>
+    <DECORATED>FatCreateDirectoryEntry</DECORATED>
+    <FUNCLINE>812</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>1112</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatCreateDirectoryEntry</FUNCTION>
+    <DECORATED>FatCreateDirectoryEntry</DECORATED>
+    <FUNCLINE>812</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>1119</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatCreateDirectoryEntry</FUNCTION>
+    <DECORATED>FatCreateDirectoryEntry</DECORATED>
+    <FUNCLINE>812</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>1195</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatCreateDirectoryEntry</FUNCTION>
+    <DECORATED>FatCreateDirectoryEntry</DECORATED>
+    <FUNCLINE>812</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>1342</LINE>
+      <COLUMN>54</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatQueryDirectory</FUNCTION>
+    <DECORATED>FatQueryDirectory</DECORATED>
+    <FUNCLINE>1272</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_operations.c</FILENAME>
+      <LINE>1364</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FatQueryDirectory</FUNCTION>
+    <DECORATED>FatQueryDirectory</DECORATED>
+    <FUNCLINE>1272</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

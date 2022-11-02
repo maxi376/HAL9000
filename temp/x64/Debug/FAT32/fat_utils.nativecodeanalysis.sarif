@@ -1,0 +1,654 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 25,
+                  "endLine": 239,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "_FirstFreeCluster",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 529,
+                  "startColumn": 20,
+                  "endLine": 529,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "FirstSectorOfCluster",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 562,
+                  "startColumn": 21,
+                  "endLine": 562,
+                  "endColumn": 48
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "ClusterOfSector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 588,
+                  "startColumn": 23,
+                  "endLine": 588,
+                  "endColumn": 58
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetDirEntryFromSector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 609,
+                  "startColumn": 9,
+                  "endLine": 609,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetDirEntryFromSector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 675,
+                  "startColumn": 28,
+                  "endLine": 675,
+                  "endColumn": 63
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "WriteDirEntryToSector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 696,
+                  "startColumn": 9,
+                  "endLine": 696,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "WriteDirEntryToSector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+                },
+                "region": {
+                  "startLine": 710,
+                  "startColumn": 9,
+                  "endLine": 710,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "WriteDirEntryToSector",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30146.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x008DC1B0 -il C:\\Users\\NICOLE~1\\AppData\\Local\\Temp\\_CL_6959fa3bast -typedil -f src\\fat_utils.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930146 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -I D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32\\headers -I D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\commonlib\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\shared\\common -I D:\\Max\\PSO\\lab0\\hal9000\\src\\shared\\kernel -I D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL\\inc -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -Oy -DCODE_ANALYSIS -DDEBUG -D_DEBUG -D_UNICODE -DUNICODE -GF -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -clrNoPureCRT -D_DEBUG -D_MT -GS -D_M_FP_PRECISE -FoD:\\Max\\PSO\\lab0\\hal9000\\src\\..\\temp\\x64\\Debug\\FAT32\\fat_utils.obj -FdD:\\Max\\PSO\\lab0\\hal9000\\src\\..\\bin\\x64\\Debug\\FAT32\\FAT32.pdb -external:W 4 -Gd -analyze:projectdirectory D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32\\Include\\um -I D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32\\Include\\um -MPdiagMutex 00000000000001AC",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Max/PSO/lab0/hal9000/src/FAT32/src/fat_utils.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "55ce3d1f6a9bcfee7d29a7edc33d3e32"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/fat32/headers/fat32_base.h"
+          },
+          "hashes": {
+            "md5": "fb3f985562287191ed58cef49fc523dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/common_lib.h"
+          },
+          "hashes": {
+            "md5": "ca0a3e51f0c638a6c318e990439118e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/base.h"
+          },
+          "hashes": {
+            "md5": "771305ad8a8a146823442f2ddad93134"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/data_type.h"
+          },
+          "hashes": {
+            "md5": "bc849edea290711887bb5c7cb69bf171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/sal_interface.h"
+          },
+          "hashes": {
+            "md5": "50e9606f963973ed5e4d6163ac41d7d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/sal_intrinsic.h"
+          },
+          "hashes": {
+            "md5": "bf84010c34c5a6135aea0e0aa154656a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/status.h"
+          },
+          "hashes": {
+            "md5": "f91ad82a67bb9f76b66d6c0da2183dd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/va_list.h"
+          },
+          "hashes": {
+            "md5": "512db8a786fa59f78a4f9b523a36b7f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/intutils.h"
+          },
+          "hashes": {
+            "md5": "3415b1c645a1a545396cd38f8279b78e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/native/memory.h"
+          },
+          "hashes": {
+            "md5": "37a91b48896ac136a47b50082f3e8f37"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_memory.h"
+          },
+          "hashes": {
+            "md5": "cdecc0c2071268ccf2d44e19806faf55"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/assert.h"
+          },
+          "hashes": {
+            "md5": "8e1986409072fd9b3d7682f54484cbc8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/native/string.h"
+          },
+          "hashes": {
+            "md5": "15b46a08a7e1ee11d01cbf754203d8be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_string.h"
+          },
+          "hashes": {
+            "md5": "8e92d53955c6c644cecd0765485f2cc6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/io.h"
+          },
+          "hashes": {
+            "md5": "92833f807030e2388123d08b74fff5c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/list.h"
+          },
+          "hashes": {
+            "md5": "1ec55a169dab596860cb2b10c94fe963"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/pci_system.h"
+          },
+          "hashes": {
+            "md5": "d428f3a4daddd80dbb4fd6fe99c9ce06"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pci_device.h"
+          },
+          "hashes": {
+            "md5": "177c2d2b147b172fd36f11c47b60f8a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pci.h"
+          },
+          "hashes": {
+            "md5": "2f24f046cc9631fc080488afa8a17703"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pci_registers.h"
+          },
+          "hashes": {
+            "md5": "f38da7850ed97e924b6a4084e3dfbb2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/apic_common.h"
+          },
+          "hashes": {
+            "md5": "3bf4a0895e934a8c7fe3dfca5c2309c6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/filesystem.h"
+          },
+          "hashes": {
+            "md5": "cd515a15dbb74ab41e07302f03eb2a4e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network.h"
+          },
+          "hashes": {
+            "md5": "0eebe07a2524c8654da56683d797cf3c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network_packets.h"
+          },
+          "hashes": {
+            "md5": "3cc9a93c6321f9bfe48b0a625d84d48e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network_device.h"
+          },
+          "hashes": {
+            "md5": "78918a6fc70f67b210dc044eb5edc547"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/cpu_structures.h"
+          },
+          "hashes": {
+            "md5": "901285f7268b1bdd65bb6ee61eda8bd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/io_structures.h"
+          },
+          "hashes": {
+            "md5": "d6ada2821fdd33de93146639542c03e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/time.h"
+          },
+          "hashes": {
+            "md5": "49310fad61d7a82a9e43a298ca8361ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/mutex.h"
+          },
+          "hashes": {
+            "md5": "3002b53e0cc436a6eec9ea1332c8ec41"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/synch.h"
+          },
+          "hashes": {
+            "md5": "6eb303fa4bf0191200636733cdf6cf59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/lock_common.h"
+          },
+          "hashes": {
+            "md5": "577ed61bd16d1fe1d9a9b37a147af7dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/spinlock.h"
+          },
+          "hashes": {
+            "md5": "ae143af93696fd973f009a383a49108e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/monlock.h"
+          },
+          "hashes": {
+            "md5": "ea70e53237fb022db1123e275c1b3c79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/rw_spinlock.h"
+          },
+          "hashes": {
+            "md5": "ed781b02c830042620bda7f778bfb0be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/rec_rw_spinlock.h"
+          },
+          "hashes": {
+            "md5": "7044acefd4c97a2b7319e1b32661c1c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/event.h"
+          },
+          "hashes": {
+            "md5": "9648b5bb16c4ec6d6a63b5d1be4e181e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/common/mem_structures.h"
+          },
+          "hashes": {
+            "md5": "47a771f8c1f023718172744ff358f16b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/log.h"
+          },
+          "hashes": {
+            "md5": "7bd98d0d9717659660937220239c893e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpu.h"
+          },
+          "hashes": {
+            "md5": "ddf44bf9acaa8c80bd4b8e8100a254ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/register.h"
+          },
+          "hashes": {
+            "md5": "5483d59340ce611cc5253ee5b00768bf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/hw_fpu.h"
+          },
+          "hashes": {
+            "md5": "3fcc9466880cca0ff14754b3ab1ea2f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpuid_leaf.h"
+          },
+          "hashes": {
+            "md5": "56d955051cc6ea42db950feb40c49b9c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpu_if.h"
+          },
+          "hashes": {
+            "md5": "a03c6f257e07ed07aed4e481af05669f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpu_utils.h"
+          },
+          "hashes": {
+            "md5": "ab0340cf63993bebdcb96416043deb34"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/fat32/headers/fat_structures.h"
+          },
+          "hashes": {
+            "md5": "746d7c8f3bc11ed558c0d37be5cdb2fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/ex.h"
+          },
+          "hashes": {
+            "md5": "78dfbb53d2b7699dde155deee2b28ac0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_heap.h"
+          },
+          "hashes": {
+            "md5": "20edded12ec81225c957c39dda4ef242"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/heap_tags.h"
+          },
+          "hashes": {
+            "md5": "ea57b43f1e0ecf01e5bcc39283fcbe0e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/fat32/headers/fat_operations.h"
+          },
+          "hashes": {
+            "md5": "c9b33a3cab75a7e39be0b28457451496"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/fat32/headers/fat_utils.h"
+          },
+          "hashes": {
+            "md5": "0d5992054d34517f319e732776996599"
+          }
+        }
+      ]
+    }
+  ]
+}

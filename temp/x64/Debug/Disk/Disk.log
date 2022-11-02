@@ -1,0 +1,14 @@
+﻿  disk.c
+  disk_dispatch.c
+  Disk.vcxproj -> D:\Max\PSO\lab0\hal9000\bin\x64\Debug\Disk\Disk.lib
+D:\Max\PSO\lab0\hal9000\src\Disk\src\disk.c(237): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+  "Project name: [Disk]"
+  "Project dir: [D:\Max\PSO\lab0\hal9000\src\]"
+  "Platform name: [x64]"
+  "Configuration name: [Debug]"
+  "Solution name: [HAL9000]"
+  "Target name: [Disk]"
+  "Target extension: [.lib]"
+  "Full project path: [D:\Max\PSO\lab0\hal9000\src\..\bin\x64\Debug\Disk]"
+  About to save scripts
+  --INFO: build done!

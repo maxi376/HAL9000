@@ -1,0 +1,923 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30146.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x008DC1B0 -il C:\\Users\\NICOLE~1\\AppData\\Local\\Temp\\_CL_d0785522ast -typedil -f src\\test_thread.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930146 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -I D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL9000\\headers -I D:\\Max\\PSO\\lab0\\hal9000\\src\\shared\\common -I D:\\Max\\PSO\\lab0\\hal9000\\src\\shared\\kernel -I D:\\Max\\PSO\\lab0\\hal9000\\acpi\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\commonlib\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\SwapFS\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\FAT32\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\PE_Parser\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\Eth_82574L\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\NetworkStack\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\Disk\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\Volume\\inc -I D:\\Max\\PSO\\lab0\\hal9000\\src\\Ata\\inc -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -Oy -DCODE_ANALYSIS -DX64 -DAMD64 -DDEBUG -D_DEBUG -DWIN64 -GF -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -clrNoPureCRT -D_DEBUG -D_MT -GS -D_M_FP_PRECISE -FoD:\\Max\\PSO\\lab0\\hal9000\\src\\..\\temp\\x64\\Debug\\HAL9000\\test_thread.obj -FdD:\\Max\\PSO\\lab0\\hal9000\\src\\..\\temp\\x64\\Debug\\HAL9000\\vc142.pdb -external:W 4 -Gd -wd 4313 -wd 4474 -wd 4476 -wd 4477 -analyze:projectdirectory D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL9000 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL9000\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL9000\\Include\\um -I D:\\Max\\PSO\\lab0\\hal9000\\src\\HAL9000\\Include\\um -MPdiagMutex 00000000000001B4",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/boot_module.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "03f01611609096496dd9deaa593771b6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/hal9000.h"
+          },
+          "hashes": {
+            "md5": "344c8845271c748f71a4e442e7bd9607"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/common_lib.h"
+          },
+          "hashes": {
+            "md5": "ca0a3e51f0c638a6c318e990439118e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/base.h"
+          },
+          "hashes": {
+            "md5": "771305ad8a8a146823442f2ddad93134"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/data_type.h"
+          },
+          "hashes": {
+            "md5": "bc849edea290711887bb5c7cb69bf171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/sal_interface.h"
+          },
+          "hashes": {
+            "md5": "50e9606f963973ed5e4d6163ac41d7d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/sal_intrinsic.h"
+          },
+          "hashes": {
+            "md5": "bf84010c34c5a6135aea0e0aa154656a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/status.h"
+          },
+          "hashes": {
+            "md5": "f91ad82a67bb9f76b66d6c0da2183dd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/va_list.h"
+          },
+          "hashes": {
+            "md5": "512db8a786fa59f78a4f9b523a36b7f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/intutils.h"
+          },
+          "hashes": {
+            "md5": "3415b1c645a1a545396cd38f8279b78e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/native/memory.h"
+          },
+          "hashes": {
+            "md5": "37a91b48896ac136a47b50082f3e8f37"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_memory.h"
+          },
+          "hashes": {
+            "md5": "cdecc0c2071268ccf2d44e19806faf55"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/assert.h"
+          },
+          "hashes": {
+            "md5": "8e1986409072fd9b3d7682f54484cbc8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/native/string.h"
+          },
+          "hashes": {
+            "md5": "15b46a08a7e1ee11d01cbf754203d8be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_string.h"
+          },
+          "hashes": {
+            "md5": "8e92d53955c6c644cecd0765485f2cc6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/hal.h"
+          },
+          "hashes": {
+            "md5": "7f78ea9e04f30c32135f8da019fc932a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/yasm_imports.h"
+          },
+          "hashes": {
+            "md5": "0258bede887f396c42498f189be47510"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/gdt.h"
+          },
+          "hashes": {
+            "md5": "1d9fe1dee261a962297c1890038c869c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/msr.h"
+          },
+          "hashes": {
+            "md5": "7e7efc03e1fab145e2f148a874787e7a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/log.h"
+          },
+          "hashes": {
+            "md5": "7bd98d0d9717659660937220239c893e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpu.h"
+          },
+          "hashes": {
+            "md5": "ddf44bf9acaa8c80bd4b8e8100a254ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/register.h"
+          },
+          "hashes": {
+            "md5": "5483d59340ce611cc5253ee5b00768bf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/hw_fpu.h"
+          },
+          "hashes": {
+            "md5": "3fcc9466880cca0ff14754b3ab1ea2f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpuid_leaf.h"
+          },
+          "hashes": {
+            "md5": "56d955051cc6ea42db950feb40c49b9c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpu_if.h"
+          },
+          "hashes": {
+            "md5": "a03c6f257e07ed07aed4e481af05669f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cpu_utils.h"
+          },
+          "hashes": {
+            "md5": "ab0340cf63993bebdcb96416043deb34"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/ex.h"
+          },
+          "hashes": {
+            "md5": "78dfbb53d2b7699dde155deee2b28ac0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_heap.h"
+          },
+          "hashes": {
+            "md5": "20edded12ec81225c957c39dda4ef242"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/list.h"
+          },
+          "hashes": {
+            "md5": "1ec55a169dab596860cb2b10c94fe963"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/heap_tags.h"
+          },
+          "hashes": {
+            "md5": "ea57b43f1e0ecf01e5bcc39283fcbe0e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/boot_module.h"
+          },
+          "hashes": {
+            "md5": "220985c7681face25072a8f0f7f6fd2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/mmu.h"
+          },
+          "hashes": {
+            "md5": "0da4ac8762a1fb71a953caf87305bea2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/common/mem_structures.h"
+          },
+          "hashes": {
+            "md5": "47a771f8c1f023718172744ff358f16b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/lock_common.h"
+          },
+          "hashes": {
+            "md5": "577ed61bd16d1fe1d9a9b37a147af7dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/spinlock.h"
+          },
+          "hashes": {
+            "md5": "ae143af93696fd973f009a383a49108e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/monlock.h"
+          },
+          "hashes": {
+            "md5": "ea70e53237fb022db1123e275c1b3c79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/rw_spinlock.h"
+          },
+          "hashes": {
+            "md5": "ed781b02c830042620bda7f778bfb0be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/rec_rw_spinlock.h"
+          },
+          "hashes": {
+            "md5": "7044acefd4c97a2b7319e1b32661c1c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/multiboot.h"
+          },
+          "hashes": {
+            "md5": "9f910e3e95030f3617b7563a9655a553"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/dmp_cmos.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "cb1ef3f6bbf30691ada08d47c776e5d8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_cmos.h"
+          },
+          "hashes": {
+            "md5": "5d79eeefe8cdb613dc87195069f71abc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/cmos.h"
+          },
+          "hashes": {
+            "md5": "ad3546d482ac820beaa4c6a9e9ceacff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_common.h"
+          },
+          "hashes": {
+            "md5": "f998fd417419d7a36f9861098c853ba0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/dmp_int15.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "3ee2d2e7da3fbd5e4275cad65e5a37e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_int15.h"
+          },
+          "hashes": {
+            "md5": "ffab6ec6ab0f43963de79452598ce0ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/int15.h"
+          },
+          "hashes": {
+            "md5": "58c57d8589da000133984943fee378d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/dmp_io.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "74d176f7844cf933faad8f0cb777383b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_io.h"
+          },
+          "hashes": {
+            "md5": "4951499dac238c48a53f1845b933fcc5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/io.h"
+          },
+          "hashes": {
+            "md5": "92833f807030e2388123d08b74fff5c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/pci_system.h"
+          },
+          "hashes": {
+            "md5": "d428f3a4daddd80dbb4fd6fe99c9ce06"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pci_device.h"
+          },
+          "hashes": {
+            "md5": "177c2d2b147b172fd36f11c47b60f8a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pci.h"
+          },
+          "hashes": {
+            "md5": "2f24f046cc9631fc080488afa8a17703"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pci_registers.h"
+          },
+          "hashes": {
+            "md5": "f38da7850ed97e924b6a4084e3dfbb2d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/apic_common.h"
+          },
+          "hashes": {
+            "md5": "3bf4a0895e934a8c7fe3dfca5c2309c6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/filesystem.h"
+          },
+          "hashes": {
+            "md5": "cd515a15dbb74ab41e07302f03eb2a4e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network.h"
+          },
+          "hashes": {
+            "md5": "0eebe07a2524c8654da56683d797cf3c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network_packets.h"
+          },
+          "hashes": {
+            "md5": "3cc9a93c6321f9bfe48b0a625d84d48e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network_device.h"
+          },
+          "hashes": {
+            "md5": "78918a6fc70f67b210dc044eb5edc547"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/cpu_structures.h"
+          },
+          "hashes": {
+            "md5": "901285f7268b1bdd65bb6ee61eda8bd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/io_structures.h"
+          },
+          "hashes": {
+            "md5": "d6ada2821fdd33de93146639542c03e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/time.h"
+          },
+          "hashes": {
+            "md5": "49310fad61d7a82a9e43a298ca8361ec"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/mutex.h"
+          },
+          "hashes": {
+            "md5": "3002b53e0cc436a6eec9ea1332c8ec41"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/synch.h"
+          },
+          "hashes": {
+            "md5": "6eb303fa4bf0191200636733cdf6cf59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/event.h"
+          },
+          "hashes": {
+            "md5": "9648b5bb16c4ec6d6a63b5d1be4e181e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/volume/headers/volume_structures.h"
+          },
+          "hashes": {
+            "md5": "7d02cf2c7be7a84efd6884536c10932f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/dmp_network.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "0db95aa5c098d7451b79742323889b94"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_network.h"
+          },
+          "hashes": {
+            "md5": "d914e456a90558073455edfe06dc699e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/network_utils.h"
+          },
+          "hashes": {
+            "md5": "38dad24e18b48e84ae09b2b195fc2e10"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_memory.h"
+          },
+          "hashes": {
+            "md5": "990e7b32005e175805c03c5b98f76936"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/dmp_volume.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "b267df8567704b577c4bdbbd7229fcd0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/dmp_volume.h"
+          },
+          "hashes": {
+            "md5": "c33e5bdc53a5d05c7924c065c2be64ea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/ex_system.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "b87d72604e2ac1702ea931913601f36d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/ex_system.h"
+          },
+          "hashes": {
+            "md5": "e2e33501cc6112c957a4f2ec4a067438"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/thread_internal.h"
+          },
+          "hashes": {
+            "md5": "6bac267cf14cac7717ce1be5bd948cb6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/ref_cnt.h"
+          },
+          "hashes": {
+            "md5": "8c6c65cf15e1f62a263eda2dbe606d9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/ex_event.h"
+          },
+          "hashes": {
+            "md5": "d888f58dacc200e976a20e7d8d6794f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/kernel/thread.h"
+          },
+          "hashes": {
+            "md5": "0a77c39d2ad9c554e9e8db3b641d0c14"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/common/thread_defs.h"
+          },
+          "hashes": {
+            "md5": "db415edca1d12e5fa38abf8762276a4b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/io_devices.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "3b0a3ff6bea96a9911e077f69d74a640"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/volume/inc/volume.h"
+          },
+          "hashes": {
+            "md5": "100e2f10779447f655c4fc251d095ef6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/iomu.h"
+          },
+          "hashes": {
+            "md5": "543ea6907a4fa101c1c7dc093bac1966"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/mdl.h"
+          },
+          "hashes": {
+            "md5": "3c2d92b5465ec941b12a3f1073905de9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/isr.h"
+          },
+          "hashes": {
+            "md5": "c72859ccd982ddceec729194a1564094"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/vmm.h"
+          },
+          "hashes": {
+            "md5": "46e7ef70e809032020ae5ae258d8d7d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/pte.h"
+          },
+          "hashes": {
+            "md5": "6fc5ec9a42f10c3f92827aeb7d8eab1c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/os_time.h"
+          },
+          "hashes": {
+            "md5": "6711215acaae35e2de06cb2406ab94b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/keyboard.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "a72a066b0ddda530613d0b5b109f369a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/keyboard.h"
+          },
+          "hashes": {
+            "md5": "b9a3bb76bebd71458b96f200bf8475bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/scan_codes.h"
+          },
+          "hashes": {
+            "md5": "77885e03b485f2276be8a5c4412530c4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/strutils.h"
+          },
+          "hashes": {
+            "md5": "fece3411b284a4d6dac8a54f9f9e2720"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Max/PSO/lab0/hal9000/src/HAL9000/src/mmu.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "00d1499e25e9819cecbcaacdd76cf42a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/pmm.h"
+          },
+          "hashes": {
+            "md5": "a0f632368c8b22817f3035c65b0d5f00"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/display.h"
+          },
+          "hashes": {
+            "md5": "d98957175651f0199637f46efe348c27"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/cpumu.h"
+          },
+          "hashes": {
+            "md5": "1a72799a473e31c86ec8637a92192463"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal/inc/tss.h"
+          },
+          "hashes": {
+            "md5": "0e3642a9c57dac0898d1860e565beba1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/pe_parser/inc/pe_parser.h"
+          },
+          "hashes": {
+            "md5": "550bccee32bb8127f1079b6383ea4fe3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/pe_parser/inc/pe_exports.h"
+          },
+          "hashes": {
+            "md5": "e15c0ce71e3e42f32677774c473ab8f0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/process_internal.h"
+          },
+          "hashes": {
+            "md5": "7b99873cd04256f2b2c2683c9b50c789"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/process.h"
+          },
+          "hashes": {
+            "md5": "f83e43a5074d7bdace7b7a3728cb77b3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/shared/common/process_defs.h"
+          },
+          "hashes": {
+            "md5": "8020ae3d5221ba8942ce1755a41aebd0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/src/test_thread.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "b2bbad44473d0f205364386d341642f3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/test_common.h"
+          },
+          "hashes": {
+            "md5": "9751ec49189e788351f2fef19d2cc9a2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/print.h"
+          },
+          "hashes": {
+            "md5": "f852890bcef580cdd80108cbb3db21c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/test_thread.h"
+          },
+          "hashes": {
+            "md5": "2640a03c3e0ad62b8fc0588e9701eaef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/test_timer.h"
+          },
+          "hashes": {
+            "md5": "c09c5a9f60ec0bb9ba3ab7fdd33c1533"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/ex_timer.h"
+          },
+          "hashes": {
+            "md5": "e3349a12a35d4eca4fafa7bb7b748fc0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/test_priority_scheduler.h"
+          },
+          "hashes": {
+            "md5": "bb7a713348f267c01eaf52fb65cbb01a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/hal9000/headers/test_priority_donation.h"
+          },
+          "hashes": {
+            "md5": "12b40ace3d7d1d16a0d681f36bac868c"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+D:\Max\PSO\lab0\hal9000\bin\x64\Debug\HAL9000\HAL9000.bin.lastcodeanalysissucceeded
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\NativeCodeAnalysis.read.1.tlog

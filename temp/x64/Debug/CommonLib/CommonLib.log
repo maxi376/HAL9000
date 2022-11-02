@@ -1,0 +1,42 @@
+﻿  src\_gs_checks.yasm
+  assert.c
+  bitmap.c
+  checkin_queue.c
+  cl_heap.c
+  common_lib.c
+  event.c
+  gs_checks.c
+  gs_utils.c
+  hash_table.c
+  intutils.c
+  list.c
+  lock_common.c
+  cl_memory.c
+  monlock.c
+  rec_rw_spinlock.c
+  ref_cnt.c
+  rtc_checks.c
+  rw_spinlock.c
+  seh.c
+  spinlock.c
+  cl_string.c
+  stack_dynamic.c
+  stack_interface.c
+  strutils.c
+  time.c
+  CommonLib.vcxproj -> D:\Max\PSO\lab0\hal9000\bin\x64\Debug\CommonLib\CommonLib.lib
+D:\Max\PSO\lab0\hal9000\src\CommonLib\src\rec_rw_spinlock.c(74): warning C26166: Possibly failing to acquire or to hold lock '*Spinlock' in function 'RecRwSpinlockAcquire'.
+D:\Max\PSO\lab0\hal9000\src\CommonLib\src\rec_rw_spinlock.c(122): warning C26165: Possibly failing to release lock '*Spinlock' in function 'RecRwSpinlockRelease'.
+D:\Max\PSO\lab0\hal9000\src\CommonLib\src\rec_rw_spinlock.c(122): warning C26110: Caller failing to hold lock 'Spinlock->RwSpinlock' before calling function 'RwSpinlockRelease'.
+D:\Max\PSO\lab0\hal9000\src\CommonLib\src\stack_interface.c(39): warning C33010: Unchecked lower bound for enum Type used as index..
+D:\Max\PSO\lab0\hal9000\src\CommonLib\src\stack_interface.c(66): warning C33010: Unchecked lower bound for enum Type used as index..
+  "Project name: [CommonLib]"
+  "Project dir: [D:\Max\PSO\lab0\hal9000\src\CommonLib\]"
+  "Platform name: [x64]"
+  "Configuration name: [Debug]"
+  "Solution name: [HAL9000]"
+  "Target name: [CommonLib]"
+  "Target extension: [.lib]"
+  "Full project path: [D:\Max\PSO\lab0\hal9000\src\CommonLib\..\bin\x64\Debug\CommonLib]"
+  About to save scripts
+  --INFO: build done!

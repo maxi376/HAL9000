@@ -1,0 +1,191 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30146.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0053C1B0 -il C:\\Users\\NICOLE~1\\AppData\\Local\\Temp\\_CL_dca63416ast -typedil -f src\\cl_memory.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930146 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -I D:\\Max\\PSO\\lab0\\hal9000\\src\\CommonLib\\headers -I D:\\Max\\PSO\\lab0\\hal9000\\src\\CommonLib\\inc -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -Oy -DCODE_ANALYSIS -DCOMMONLIB_LIB_IMPL -DCL_NO_RUNTIME_CHECKS -DDEBUG -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -GF -clrNoPureCRT -D_DEBUG -D_MT -GS -D_M_FP_PRECISE -FoD:\\Max\\PSO\\lab0\\hal9000\\src\\..\\temp\\x64\\DebugNonNative\\CommonLib\\cl_memory.obj -FdD:\\Max\\PSO\\lab0\\hal9000\\src\\..\\bin\\x64\\DebugNonNative\\CommonLib\\CommonLib.pdb -external:W 4 -Gd -analyze:projectdirectory D:\\Max\\PSO\\lab0\\hal9000\\src\\CommonLib -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I D:\\Max\\PSO\\lab0\\hal9000\\src\\CommonLib\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I D:\\Max\\PSO\\lab0\\hal9000\\src\\CommonLib\\Include\\um -I D:\\Max\\PSO\\lab0\\hal9000\\src\\CommonLib\\Include\\um -MPdiagMutex 00000000000001C4",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/src/common_lib.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "b75c8f9ec35be628e8f94c35b4134097"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/common_lib.h"
+          },
+          "hashes": {
+            "md5": "ca0a3e51f0c638a6c318e990439118e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/base.h"
+          },
+          "hashes": {
+            "md5": "771305ad8a8a146823442f2ddad93134"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/data_type.h"
+          },
+          "hashes": {
+            "md5": "bc849edea290711887bb5c7cb69bf171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/sal_interface.h"
+          },
+          "hashes": {
+            "md5": "50e9606f963973ed5e4d6163ac41d7d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/sal_intrinsic.h"
+          },
+          "hashes": {
+            "md5": "bf84010c34c5a6135aea0e0aa154656a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/status.h"
+          },
+          "hashes": {
+            "md5": "f91ad82a67bb9f76b66d6c0da2183dd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/va_list.h"
+          },
+          "hashes": {
+            "md5": "512db8a786fa59f78a4f9b523a36b7f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/intutils.h"
+          },
+          "hashes": {
+            "md5": "3415b1c645a1a545396cd38f8279b78e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/native/memory.h"
+          },
+          "hashes": {
+            "md5": "37a91b48896ac136a47b50082f3e8f37"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_memory.h"
+          },
+          "hashes": {
+            "md5": "cdecc0c2071268ccf2d44e19806faf55"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/assert.h"
+          },
+          "hashes": {
+            "md5": "8e1986409072fd9b3d7682f54484cbc8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/native/string.h"
+          },
+          "hashes": {
+            "md5": "15b46a08a7e1ee11d01cbf754203d8be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/cl_string.h"
+          },
+          "hashes": {
+            "md5": "8e92d53955c6c644cecd0765485f2cc6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/lock_common.h"
+          },
+          "hashes": {
+            "md5": "577ed61bd16d1fe1d9a9b37a147af7dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/spinlock.h"
+          },
+          "hashes": {
+            "md5": "ae143af93696fd973f009a383a49108e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/monlock.h"
+          },
+          "hashes": {
+            "md5": "ea70e53237fb022db1123e275c1b3c79"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/rw_spinlock.h"
+          },
+          "hashes": {
+            "md5": "ed781b02c830042620bda7f778bfb0be"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/inc/rec_rw_spinlock.h"
+          },
+          "hashes": {
+            "md5": "7044acefd4c97a2b7319e1b32661c1c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/max/pso/lab0/hal9000/src/commonlib/src/cl_memory.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "50cf7044bbd02dbb20b800638f0fa632"
+          }
+        }
+      ]
+    }
+  ]
+}

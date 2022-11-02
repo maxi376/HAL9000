@@ -1,0 +1,16 @@
+^src\_mboot32.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_mboot32.obj
+^src\_syscall.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_syscall.obj
+^src\_thread.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_thread.obj
+^src\_trampoline.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_trampoline.obj
+^src\_transition.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_transition.obj
+^src\_exports.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_exports.obj
+^src\_isr.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_isr.obj
+^src\_low_mem.yasm
+D:\Max\PSO\lab0\hal9000\temp\x64\Debug\HAL9000\_low_mem.obj

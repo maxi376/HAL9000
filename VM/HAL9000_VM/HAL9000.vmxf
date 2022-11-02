@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Foundry>
+<VM>
+<VMId type="string">52 47 f0 09 59 df e1 76-5a b0 03 48 a2 96 dc 79</VMId>
+<ClientMetaData>
+<clientMetaDataAttributes/>
+<HistoryEventList/></ClientMetaData>
+<vmxPathName type="string">HAL9000.vmx</vmxPathName></VM></Foundry>

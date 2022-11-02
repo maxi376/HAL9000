@@ -1,0 +1,13 @@
+﻿  volume.c
+  volume_dispatch.c
+  Volume.vcxproj -> D:\Max\PSO\lab0\hal9000\bin\x64\Debug\Volume\Volume.lib
+  "Project name: [Volume]"
+  "Project dir: [D:\Max\PSO\lab0\hal9000\src\]"
+  "Platform name: [x64]"
+  "Configuration name: [Debug]"
+  "Solution name: [HAL9000]"
+  "Target name: [Volume]"
+  "Target extension: [.lib]"
+  "Full project path: [D:\Max\PSO\lab0\hal9000\src\..\bin\x64\Debug\Volume]"
+  About to save scripts
+  --INFO: build done!

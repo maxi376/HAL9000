@@ -1,0 +1,201 @@
+﻿  src\_mboot32.yasm
+  src\_syscall.yasm
+  src\_thread.yasm
+  src\_trampoline.yasm
+  src\_transition.yasm
+  src\_exports.yasm
+  src\_isr.yasm
+  src\_low_mem.yasm
+  acpi_interface.c
+  acpi_osl.c
+  ap_tramp.c
+  boot_module.c
+  cmd_basic.c
+  cmd_proc_helper.c
+  dmp_process.c
+  process.c
+  We're in the right place
+  cmd_fs_helper.c
+  cmd_interpreter.c
+  cmd_net_helper.c
+  cmd_sys_helper.c
+  cmd_thread_helper.c
+  core.c
+  cpumu.c
+  display.c
+  dmp_ata.c
+  dmp_cmos.c
+  dmp_common.c
+  dmp_cpu.c
+  dmp_disk.c
+  dmp_int15.c
+  dmp_io.c
+  dmp_ioapic.c
+  dmp_lapic.c
+  dmp_mbr.c
+  dmp_mdl.c
+  dmp_memory.c
+  dmp_multiboot.c
+  dmp_network.c
+  dmp_net_device.c
+  dmp_pci.c
+  dmp_volume.c
+  dmp_nt.c
+  Entry64.c
+  ex.c
+  ex_event.c
+  ex_system.c
+  ex_timer.c
+  gdtmu.c
+  hal_assert.c
+  idt_handlers.c
+  ioapic_system.c
+  io_devices.c
+  iomu.c
+  io_files.c
+  ipc.c
+  isr.c
+  keyboard.c
+  keyboard_utils.c
+  lapic_system.c
+  log.c
+  mdl.c
+  mmu.c
+  network_utils.c
+  perf_framework.c
+  pmm.c
+  mutex.c
+  os_info.c
+  pci_system.c
+  print.c
+  serial_comm.c
+  smp.c
+  syscall.c
+  test_priority_donation.c
+  test_priority_scheduler.c
+  test_process.c
+  test_timer.c
+  um_application.c
+  system.c
+  system_driver.c
+  test_bitmap.c
+  test_common.c
+  test_dma.c
+  test_file_io.c
+  test_net_stack.c
+  test_pmm.c
+  test_thread.c
+  test_vmm.c
+  thread.c
+  os_time.c
+  vmm.c
+  vm_reservation_space.c
+  HAL9000.vcxproj -> D:\Max\PSO\lab0\hal9000\bin\x64\Debug\HAL9000\HAL9000.bin
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\ap_tramp.c(145): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\ap_tramp.c(238): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\process.c(634): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'ProcessInsertThreadInList'. Otherwise it could be a race condition. Variable 'Process->ActiveThreads' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\process.c(659): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'ProcessNotifyThreadTermination'. Otherwise it could be a race condition. Variable 'Thread->Process->ActiveThreads' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: Potentially unconstrained access using expression '(signed char *)(&tempBuffer)'
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: Buffer tempBuffer is passed to function printf as unannotated parameter 2
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: None of the other parameters seem to be constrained by the buffer length
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: Buffer accessed is tempBuffer
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: Buffer is of length 260 bytes [size of variable]
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052:  when function OsTimeGetStringFormattedTime called at line 115 fails.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: There are other instances of this issue:
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: Potentially unconstrained access using expression '(signed char *)(&tempBuffer)' at line 119
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_fs_helper.c(116): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_thread_helper.c(64): warning C33010: Unchecked lower bound for enum State used as index..
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_thread_helper.c(549): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_thread_helper.c(554): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_thread_helper.c(559): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\cmd_thread_helper.c(564): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\core.c(136): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\dmp_common.c(29): warning C26165: Possibly failing to release lock 'm_dumpLock' in function 'DumpTakeLock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\dmp_cpu.c(43): warning C33010: Unchecked lower bound for enum Index used as index..
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\dmp_memory.c(59): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\gdtmu.c(111): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\gdtmu.c(110): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\gdtmu.c(110): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\gdtmu.c(110): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\ioapic_system.c(830): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\iomu.c(1082): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(78): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogEx'. Otherwise it could be a race condition. Variable 'm_logData.Enabled' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(83): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogEx'. Otherwise it could be a race condition. Variable 'm_logData.LoggingLevel' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(91): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogEx'. Otherwise it could be a race condition. Variable 'm_logData.LoggingComponents' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(144): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogSetState'. Otherwise it could be a race condition. Variable 'm_logData.Enabled' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(152): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogGetLevel'. Otherwise it could be a race condition. Variable 'm_logData.LoggingLevel' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(160): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogSetLevel'. Otherwise it could be a race condition. Variable 'm_logData.LoggingLevel' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(168): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogGetTracedComponents'. Otherwise it could be a race condition. Variable 'm_logData.LoggingComponents' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\log.c(176): warning C26130: Missing annotation _Requires_lock_held_(_Global_interlock_) or _No_competing_thread_ at function 'LogSetTracedComponents'. Otherwise it could be a race condition. Variable 'm_logData.LoggingComponents' should be protected by lock '_Global_interlock_'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mdl.c(45): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mdl.c(46): warning C26130: Missing annotation _Requires_lock_held_(PagingData->Lock) or _No_competing_thread_ at function 'MdlAllocateEx'. Otherwise it could be a race condition. Variable 'PagingData->Data' should be protected by lock 'PagingData->Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(334): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(834): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(1173): warning C26130: Missing annotation _Requires_lock_held_(Process->PagingData->Lock) or _No_competing_thread_ at function 'MmuIsBufferValid'. Otherwise it could be a race condition. Variable 'Process->PagingData->Data' should be protected by lock 'Process->PagingData->Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(1349): warning C26130: Missing annotation _Requires_lock_held_(m_mmuData.PagingData.Lock) or _No_competing_thread_ at function '_MmuCreatePagingTables'. Otherwise it could be a race condition. Variable 'm_mmuData.PagingData.Data' should be protected by lock 'm_mmuData.PagingData.Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(1388): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(1934): warning C33010: Unchecked lower bound for enum Heap used as index..
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mmu.c(1960): warning C33010: Unchecked lower bound for enum Heap used as index..
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mutex.c(44): warning C26166: Possibly failing to acquire or to hold lock '*Mutex' in function 'MutexAcquire'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\mutex.c(88): warning C26165: Possibly failing to release lock '*Mutex' in function 'MutexRelease'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Potentially unconstrained access using expression '(PIPC_EVENT_CPU)pCpuEvents'
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Buffer pCpuEvents'487 is passed to function LogEx as unannotated parameter 7
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: None of the other parameters seem to be constrained by the buffer length
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Buffer pCpuEvents created during call to IpcGenerateEvent on line 487
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Buffer is of length noOfMatchingCpus`436a elements (24 bytes/element) [from annotation SAL_readableTo(elementCount({parameter 6})) at d:\max\pso\lab0\hal9000\src\hal9000\headers\ipc.h(22) on function IpcGenerateEvent called at line 487]
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Values of variables:
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Pointer result.IpcGenerateEvent is at offset offset(result.IpcGenerateEvent)`487a bytes from the start of the buffer
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: Pointer result.cl_strrchr is at offset offset(result.cl_strrchr)`500 bytes from the start of result.cl_strrchr'500
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: result.CpuGetApicId = result.CpuGetApicId`500a
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: pCpuEvents = result.IpcGenerateEvent
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: where
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: tempResult`474a == noOfMatchingCpus`436a
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: noOfMatchingCpus`436a >= 1
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: tempResult`474a >= 0
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: noOfMatchingCpus`436a != 0
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\smp.c(500): warning C26052: 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_priority_donation.c(314): warning C26110: Caller failing to hold lock '(contexes[0]).Mutex' before calling function 'MutexRelease'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_priority_donation.c(325): warning C26110: Caller failing to hold lock '(contexes[0]).Mutex' before calling function 'MutexRelease'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_priority_donation.c(375): warning C26167: Possibly releasing unheld lock '(contexes[0]).Mutex' in function 'TestThreadPriorityDonationMultiple'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_priority_scheduler.c(82): warning C26165: Possibly failing to release lock '*pMutex' in function 'TestPrepareMutex'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_priority_scheduler.c(106): warning C26167: Possibly releasing unheld lock '*pMutex' in function 'TestThreadPostCreateMutex'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_priority_scheduler.c(106): warning C26110: Caller failing to hold lock '*pMutex' before calling function 'MutexRelease'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_timer.c(111): warning C6388: 'pCtx->TimesToWait' might not be '0':  this does not adhere to the specification for the function '_TestThreadSleepWaitTimer'. 
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\test_timer.c(206): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(340): warning C26130: Missing annotation _Requires_lock_held_(Process->PagingData->Lock) or _No_competing_thread_ at function 'ThreadCreateEx'. Otherwise it could be a race condition. Variable 'Process->PagingData->Data' should be protected by lock 'Process->PagingData->Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(361): warning C26130: Missing annotation _Requires_lock_held_(Process->ThreadListLock) or _No_competing_thread_ at function 'ThreadCreateEx'. Otherwise it could be a race condition. Variable 'Process->NumberOfThreads' should be protected by lock 'Process->ThreadListLock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(393): warning C26130: Missing annotation _Requires_lock_held_(Process->PagingData->Lock) or _No_competing_thread_ at function 'ThreadCreateEx'. Otherwise it could be a race condition. Variable 'Process->PagingData->Data' should be protected by lock 'Process->PagingData->Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(558): warning C26110: Caller failing to hold lock 'pThread->BlockLock' before calling function 'icall'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(569): warning C26167: Possibly releasing unheld lock 'pThread->BlockLock' in function 'ThreadExit'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(783): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(786): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(1027): warning C26167: Possibly releasing unheld lock 'm_threadSystemData.ReadyThreadsLock' in function '_ThreadSchedule'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(1046): warning C26167: Possibly releasing unheld lock 'm_threadSystemData.ReadyThreadsLock' in function 'ThreadCleanupPostSchedule'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\thread.c(1060): warning C26167: Possibly releasing unheld lock 'prevThread->BlockLock' in function 'ThreadCleanupPostSchedule'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vmm.c(116): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vmm.c(761): warning C26130: Missing annotation _Requires_lock_held_(PagingData->Lock) or _No_competing_thread_ at function 'VmmSolvePageFault'. Otherwise it could be a race condition. Variable 'PagingData->Data' should be protected by lock 'PagingData->Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vmm.c(766): warning C26130: Missing annotation _Requires_lock_held_(PagingData->Lock) or _No_competing_thread_ at function 'VmmSolvePageFault'. Otherwise it could be a race condition. Variable 'PagingData->Data' should be protected by lock 'PagingData->Lock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vmm.c(969): warning C26130: Missing annotation _Requires_lock_held_(ReservationSpace->ReservationLock) or _No_competing_thread_ at function 'VmmDestroyVirtualAddressSpace'. Otherwise it could be a race condition. Variable 'ReservationSpace->ReservationList' should be protected by lock 'ReservationSpace->ReservationLock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vmm.c(974): warning C26130: Missing annotation _Requires_lock_held_(ReservationSpace->ReservationLock) or _No_competing_thread_ at function 'VmmDestroyVirtualAddressSpace'. Otherwise it could be a race condition. Variable 'ReservationSpace->ReservationList' should be protected by lock 'ReservationSpace->ReservationLock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vmm.c(975): warning C26130: Missing annotation _Requires_lock_held_(ReservationSpace->ReservationLock) or _No_competing_thread_ at function 'VmmDestroyVirtualAddressSpace'. Otherwise it could be a race condition. Variable 'ReservationSpace->ReservationList' should be protected by lock 'ReservationSpace->ReservationLock'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vm_reservation_space.c(955): warning C26110: Caller failing to hold lock 'ReservationSpace->ReservationLock' before calling function 'RwSpinlockRelease'.
+D:\Max\PSO\lab0\hal9000\src\HAL9000\src\vm_reservation_space.c(959): warning C26167: Possibly releasing unheld lock 'ReservationSpace->ReservationLock' in function 'VmReservationSpaceFreeRegion'.
+  Will copy files on share and PXE
+  "Project name: [HAL9000]"
+  "Project dir: ["D:\Max\PSO\lab0\hal9000\src\"]"
+  "Platform name: [x64]"
+  "Configuration name: [Debug]"
+  "Solution name: [HAL9000]"
+  "Target name: [HAL9000]"
+  "Target extension: [.bin]"
+  "Full project path: ["D:\Max\PSO\lab0\hal9000\src\"..\bin\x64\Debug\HAL9000]"
+  About to save scripts
+  D:\Max\PSO\lab0\hal9000\bin\x64\Debug\HAL9000\HAL9000.bin -> D:\Max\PSO\lab0\HAL9000\PXE\HAL9000.bin
+  1 File(s) copied
+  --INFO: build done!

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>239</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>_FirstFreeCluster</FUNCTION>
+    <DECORATED>_FirstFreeCluster</DECORATED>
+    <FUNCLINE>207</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>529</LINE>
+      <COLUMN>44</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>FirstSectorOfCluster</FUNCTION>
+    <DECORATED>FirstSectorOfCluster</DECORATED>
+    <FUNCLINE>520</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>562</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>ClusterOfSector</FUNCTION>
+    <DECORATED>ClusterOfSector</DECORATED>
+    <FUNCLINE>546</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>588</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>GetDirEntryFromSector</FUNCTION>
+    <DECORATED>GetDirEntryFromSector</DECORATED>
+    <FUNCLINE>571</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>609</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>GetDirEntryFromSector</FUNCTION>
+    <DECORATED>GetDirEntryFromSector</DECORATED>
+    <FUNCLINE>571</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>675</LINE>
+      <COLUMN>51</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>WriteDirEntryToSector</FUNCTION>
+    <DECORATED>WriteDirEntryToSector</DECORATED>
+    <FUNCLINE>662</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>696</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>WriteDirEntryToSector</FUNCTION>
+    <DECORATED>WriteDirEntryToSector</DECORATED>
+    <FUNCLINE>662</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Max\PSO\lab0\hal9000\src\FAT32\src\</FILEPATH>
+      <FILENAME>fat_utils.c</FILENAME>
+      <LINE>710</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>WriteDirEntryToSector</FUNCTION>
+    <DECORATED>WriteDirEntryToSector</DECORATED>
+    <FUNCLINE>662</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
