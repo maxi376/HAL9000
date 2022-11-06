@@ -119,3 +119,17 @@ THREAD_PRIORITY
 ThreadGetPriority(
     IN_OPT  PTHREAD             Thread
     );
+
+//******************************************************************************
+// Function:     ThreadComparePriorityReadyList
+// Description:  custom thread
+//               not returns the higher(donated) priority.
+// Returns:      status: 0/1
+// Parameter:    
+//               
+//******************************************************************************
+INT64 ThreadComparePriorityReadyList(
+    PLIST_ENTRY e1,
+    PLIST_ENTRY e2,
+    PVOID Context
+);

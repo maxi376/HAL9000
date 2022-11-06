@@ -27,6 +27,12 @@ extern FUNC_ThreadSwitch            ThreadSwitch;
 
 typedef struct _THREAD_SYSTEM_DATA
 {
+    _Guarded_by_(ReadyThreadsLock)
+        LIST_ENTRY          ReadyThreadList;
+
+    _Guarded_by_(ReadyThreadsLock)
+        THREAD_PRIORITY RunningThreadsMinPriority;
+
     LOCK                AllThreadsLock;
 
     _Guarded_by_(AllThreadsLock)
@@ -478,7 +484,8 @@ ThreadYield(
     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
     if (pThread != pCpu->ThreadData.IdleThread)
     {
-        InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);
+        //InsertTailList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList);--added max
+        InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &pThread->ReadyList, ThreadComparePriorityReadyList, NULL);
     }
     if (!bForcedYield)
     {
@@ -533,7 +540,8 @@ ThreadUnblock(
     ASSERT(ThreadStateBlocked == Thread->State);
 
     LockAcquire(&m_threadSystemData.ReadyThreadsLock, &dummyState);
-    InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);
+    //InsertTailList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList);--added max
+    InsertOrderedList(&m_threadSystemData.ReadyThreadsList, &Thread->ReadyList, ThreadComparePriorityReadyList, NULL);
     Thread->State = ThreadStateReady;
     LockRelease(&m_threadSystemData.ReadyThreadsLock, dummyState );
     LockRelease(&Thread->BlockLock, oldState);
@@ -658,9 +666,14 @@ ThreadSetPriority(
     IN      THREAD_PRIORITY     NewPriority
     )
 {
-    ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);
+    //ASSERT(ThreadPriorityLowest <= NewPriority && NewPriority <= ThreadPriorityMaximum);//not good
 
     GetCurrentThread()->Priority = NewPriority;
+
+    //new added max
+    if (NewPriority < m_threadSystemData.RunningThreadsMinPriority) {
+        ThreadYield();
+    }
 }
 
 STATUS
@@ -1220,6 +1233,10 @@ _ThreadDestroy(
     ExFreePoolWithTag(pThread, HEAP_THREAD_TAG);
 }
 
+void ThreadYieldForIpi() {
+
+}
+
 static
 void
 _ThreadKernelFunction(
@@ -1238,4 +1255,18 @@ _ThreadKernelFunction(
 
     ThreadExit(exitStatus);
     NOT_REACHED;
+}
+
+
+//comment here
+INT64 ThreadComparePriorityReadyList(PLIST_ENTRY e1, PLIST_ENTRY e2, PVOID Context) {
+    UNREFERENCED_PARAMETER(Context);
+    PTHREAD pth1 = CONTAINING_RECORD(e1, THREAD, ReadyList);
+    PTHREAD pth2 = CONTAINING_RECORD(e2, THREAD, ReadyList);
+
+    if (ThreadGetPriority(pth1) > ThreadGetPriority(pth2))
+        return -1;
+    if (ThreadGetPriority(pth1) < ThreadGetPriority(pth2))
+        return 1;
+    return 0;
 }

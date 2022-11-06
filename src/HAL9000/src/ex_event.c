@@ -1,6 +1,7 @@
 #include "HAL9000.h"
 #include "ex_event.h"
 #include "thread_internal.h"
+#include "thread.h"
 
 #include "cpumu.h"
 
@@ -97,7 +98,8 @@ ExEventWaitForSignal(
     while (TRUE != _InterlockedCompareExchange8(&Event->Signaled, newState, TRUE))
     {
         LockAcquire(&Event->EventLock, &dummyState);
-        InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);
+        //InsertTailList(&Event->WaitingList, &pCurrentThread->ReadyList);--added max
+        InsertOrderedList(&Event->WaitingList, &pCurrentThread->ReadyList, ThreadComparePriorityReadyList, NULL);
         ThreadTakeBlockLock();
         LockRelease(&Event->EventLock, dummyState);
         ThreadBlock();
